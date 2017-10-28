@@ -16,7 +16,7 @@ void function(){
 	var testOnly = parameters['Test Only'] !== 'false';
 	if(!testOnly || location.search === '?test'){
 		Scene_Title.prototype.start = function(){
-			Stage.prototype.initialize.call(this);
+			Scene_Title.prototype.initialize.call(this);
 			SceneManager.goto(Scene_Map);
 		};
 	}
